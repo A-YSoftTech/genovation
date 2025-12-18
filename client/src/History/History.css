@@ -1,0 +1,77 @@
+.container_box{
+    height: 100vh;
+    width: 100%;
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: red; */
+}
+.talk-box{
+    height: 90vh;
+    width: 90%;
+    padding: 20px;
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 25px;
+    background-color: rgba(0, 0, 0, 0.3);
+    overflow-y: auto;
+}
+.header-box{
+    width: 100%;
+    display : flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+}
+.header-box h1{
+    color: rgba(255, 255, 255, 0.7);
+    background-color: transparent;
+}
+.header-box button{
+    width: 100px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+.communication-box{
+    height: 80%;
+    width: 95%;
+    padding: 15px;
+    text-align: left;
+    background-color: transparent;
+    overflow-y: auto;
+}
+.communication-box p{
+    width: 100%;
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    /* background-color: pink; */
+    padding-bottom: 5px;
+    color: rgba(255, 255, 255, 0.7);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.433);
+}
+.user{
+    width: 100%;
+    text-align: right;
+    padding: 10px 0;
+    font-size: 18px;
+    letter-spacing: 1px;
+    background-color: transparent;
+}
+.ai{
+    width: 100%;
+    text-align: left;
+    padding: 10px 0;
+    font-size: 18px;
+    letter-spacing: 1px;
+    background-color: transparent;
+}

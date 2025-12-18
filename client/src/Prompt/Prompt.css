@@ -1,0 +1,107 @@
+.container-box{
+    height: 100vh;
+    width: 100%;
+    display : flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    /* background-color: red; */
+}
+.container-box .header{
+    width: 90%;
+    display : flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: aquamarine; */
+}
+.header h1{
+    color: rgba(255, 255, 255, 0.7);
+    background-color: transparent;
+}
+.header button{
+    width: 100px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+.inputBox{
+    height: 88vh;
+    width: 90%;
+    /* background-color: aqua; */
+    display : flex;
+    justify-content: start;
+    gap: 1.5rem;
+    align-items: center;
+    flex-direction: column;
+}
+.inputBox .communication{
+    height: 80%;
+    width: 95%;
+    padding: 15px;
+    text-align: left;
+    /* background-color: purple; */
+    overflow-y: auto;
+}
+.communication p{
+    width: 100%;
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    /* background-color: pink; */
+    padding-bottom: 5px;
+    color: rgba(255, 255, 255, 0.7);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.433);
+}
+.user{
+    width: 100%;
+    text-align: right;
+    padding: 10px 0;
+    font-size: 18px;
+    letter-spacing: 1px;
+    background-color: transparent;
+}
+.ai{
+    width: 100%;
+    text-align: left;
+    padding: 10px 0;
+    font-size: 18px;
+    letter-spacing: 1px;
+    background-color: transparent;
+}
+
+.inputBox form{
+    height: 10%;
+    width: 95%;
+    padding: 0px 15px;
+    border: 1px solid white;
+    border-radius: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(2, 2, 2, 0.2);
+}
+.inputBox form input[type="text"]{
+    width: 80%;
+    padding: 0 10px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: rgba(255, 255, 255, 0.68);
+    font-size: 18px;
+}
+.inputBox form input[type="submit"]{
+    height: 50px;
+    width: 50px;
+    padding: 0px;
+    border: 1px solid black;
+    border-radius: 50%;
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+.inputBox form input[type="submit"]:hover{
+    background-color: white;
+}
