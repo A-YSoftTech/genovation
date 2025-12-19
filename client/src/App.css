@@ -1,0 +1,9 @@
+*{
+  margin: 0;
+  padding: 0;
+  letter-spacing: 1px;
+  /* background: #213547; */
+}
+.Toastify__toast-container {
+  width: 850px !important;
+}

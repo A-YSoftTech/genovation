@@ -5,7 +5,7 @@
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
-    /* background-color: red; */
+    background: #213547;
 }
 .container-box .header{
     width: 90%;
@@ -25,6 +25,9 @@
     border-radius: 10px;
     font-size: 16px;
     background-color: rgba(255, 255, 255, 0.8);
+}
+.header button:hover{
+    background-color: rgba(255, 255, 255);
 }
 .inputBox{
     height: 88vh;
@@ -56,7 +59,7 @@
     color: rgba(255, 255, 255, 0.7);
     border-bottom: 1px solid rgba(255, 255, 255, 0.433);
 }
-.user{
+.user, .user b{
     width: 100%;
     text-align: right;
     padding: 10px 0;
@@ -64,7 +67,7 @@
     letter-spacing: 1px;
     background-color: transparent;
 }
-.ai{
+.ai, .ai b{
     width: 100%;
     text-align: left;
     padding: 10px 0;
@@ -99,9 +102,13 @@
     padding: 0px;
     border: 1px solid black;
     border-radius: 50%;
-    font-size: 16px;
-    background-color: rgba(255, 255, 255, 0.8);
+    font-size: 24px;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: .3s;
 }
 .inputBox form input[type="submit"]:hover{
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+.inputBox form input[type="submit"]:active{
+    transform: scale(0.8);
 }

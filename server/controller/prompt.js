@@ -31,7 +31,7 @@ const prompt = async (req, res) => {
         if (data) {
             const store = new promptModel({ user: task, ai: data, userId: id });
             const result = await store.save();
-            res.status(200).json({ message: "all working", store });
+            res.status(200).json({ message: "All set! Check the response below", store });
         }
     } catch (error) {
         if (error.message === "QUOTA_EXCEEDED") {

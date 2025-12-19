@@ -4,7 +4,7 @@
     display : flex;
     justify-content: center;
     align-items: center;
-    /* background-color: red; */
+    background: #213547;
 }
 .talk-box{
     height: 90vh;
@@ -38,6 +38,9 @@
     border-radius: 10px;
     font-size: 16px;
     background-color: rgba(255, 255, 255, 0.8);
+}
+.header-box button:hover{
+    background-color: rgba(255, 255, 255);
 }
 .communication-box{
     height: 80%;
