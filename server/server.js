@@ -1,9 +1,3 @@
-// require("dotenv").config();
-// const express = require("express");
-// const connectDatabase = require("./database/connect");
-// const router = require("./routes/userRoutes");
-// const cors = require("cors");
-// const cookieParser = require("cookie-parser")
 
 import 'dotenv/config';
 import express from 'express';

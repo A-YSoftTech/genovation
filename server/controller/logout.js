@@ -1,4 +1,4 @@
-
+import 'dotenv/config';
 
 const logout = async(req, res)=>{
     try {
