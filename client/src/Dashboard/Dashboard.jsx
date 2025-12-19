@@ -26,7 +26,7 @@ function Dashboard() {
     const submitRegister = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post("http://localhost:8999/register", regData);
+            const response = await axios.post("https://genovation-backend-ru5s.onrender.com/register", regData);
             toast.success(response.data.message);
             setMode("login");
         } catch (error) {
@@ -36,7 +36,7 @@ function Dashboard() {
     const submitLogin = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post("http://localhost:8999/login", loginData, { withCredentials: true });
+            const response = await axios.post("https://genovation-backend-ru5s.onrender.com/login", loginData, { withCredentials: true });
 
             toast.success(response.data.message);
             if (response.status == 200) {

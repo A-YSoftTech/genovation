@@ -15,7 +15,7 @@ function Prompt() {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await axios.get("http://localhost:8999/fetch", { withCredentials: true });
+                const response = await axios.get("https://genovation-backend-ru5s.onrender.com/fetch", { withCredentials: true });
                 setUsername(response.data.details.username);
             } catch (error) {
                 toast.error(error.response.data.message);
@@ -43,7 +43,7 @@ function Prompt() {
     const sendTask = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post("http://localhost:8999/prompt", { task }, { withCredentials: true });
+            const response = await axios.post("https://genovation-backend-ru5s.onrender.com/prompt", { task }, { withCredentials: true });
             aiResponse(response.data.store);
             toast.success(response.data.message);
             setTask("");
@@ -54,7 +54,7 @@ function Prompt() {
 
     const logout = async () => {
         try {
-            const response = await axios.post("http://localhost:8999/logout", {}, { withCredentials: true });
+            const response = await axios.post("https://genovation-backend-ru5s.onrender.com/logout", {}, { withCredentials: true });
             console.log(response);
             if (response.data.success) {
                 setTimeout(() => {

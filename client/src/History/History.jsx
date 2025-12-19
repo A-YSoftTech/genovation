@@ -8,7 +8,7 @@ const History = () => {
     useEffect(() => {
         const fetchHistory = async () => {
             try {
-                const response = await axios.get("http://localhost:8999/history", { withCredentials: true });
+                const response = await axios.get("https://genovation-backend-ru5s.onrender.com/history", { withCredentials: true });
                 toast.success(response.data.message);
                 setAiData(response.data.history);
             } catch (error) {
