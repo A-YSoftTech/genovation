@@ -20,7 +20,7 @@ const login = async(req, res)=>{
             return res.status(400).json({message : "Invalid credentials"});
         }
         const token = jwt.sign({userId : checkEmail._id}, process.env.JWT_KEY, {expiresIn : "1h"});
-        res.cookie("token", token, {httpOnly : true, secure : true, sameSite : "none", maxAge : 3600000})
+        res.cookie("token", token, {httpOnly : true, secure : true, sameSite : "none", maxAge : 3600000,path: "/" })
         res.status(200).json({message : "login successfully", token});
     } catch (error) {
         return res.status(500).json({message : error.message});
