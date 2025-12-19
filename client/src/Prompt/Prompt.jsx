@@ -48,7 +48,7 @@ function Prompt() {
             toast.success(response.data.message);
             setTask("");
         } catch (error) {
-            toast.error("Something went wrong, please wait for a minute...");
+            toast.error(error.response.data.message);
         }
     }
 
