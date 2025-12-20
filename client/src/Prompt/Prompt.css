@@ -127,7 +127,8 @@
 
 @media (max-width: 480px){
     .container-box{
-        padding: 8px;
+        height: auto;
+        /* padding: 8px; */
     }
 
     .container-box .header{
@@ -145,7 +146,7 @@
     }
 
     .inputBox{
-        width: 95%;
+        width: 90%;
     }
 
     .inputBox form input[type="text"]{
