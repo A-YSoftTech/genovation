@@ -1,80 +1,130 @@
 .container_box{
     height: 100vh;
     width: 100%;
-    display : flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     background: #213547;
+    padding: 10px;
 }
+
 .talk-box{
     height: 90vh;
     width: 90%;
+    max-width: 1100px;
     padding: 20px;
-    display : flex;
-    justify-content: center;
-    align-items: center;
+    display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1.5rem;
     border: 1px solid rgba(255, 255, 255, 0.5);
     border-radius: 25px;
     background-color: rgba(0, 0, 0, 0.3);
-    overflow-y: auto;
+    overflow: hidden;
 }
+
 .header-box{
     width: 100%;
-    display : flex;
+    display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: transparent;
 }
+
 .header-box h1{
+    font-size: 24px;
     color: rgba(255, 255, 255, 0.7);
-    background-color: transparent;
 }
+
 .header-box button{
     width: 100px;
     padding: 10px;
-    border: 1px solid black;
+    border: none;
     border-radius: 10px;
-    font-size: 16px;
-    background-color: rgba(255, 255, 255, 0.8);
+    font-size: 15px;
+    background-color: rgba(255, 255, 255, 0.85);
 }
+
 .header-box button:hover{
-    background-color: rgba(255, 255, 255);
+    background-color: #fff;
+    cursor: pointer;
 }
+
 .communication-box{
-    height: 80%;
-    width: 95%;
+    flex: 1;
+    width: 100%;
     padding: 15px;
-    text-align: left;
     background-color: transparent;
     overflow-y: auto;
 }
+
 .communication-box p{
     width: 100%;
     margin: 10px 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    /* background-color: pink; */
     padding-bottom: 5px;
+    text-align: center;
     color: rgba(255, 255, 255, 0.7);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.433);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
+
 .user{
     width: 100%;
     text-align: right;
-    padding: 10px 0;
-    font-size: 18px;
-    letter-spacing: 1px;
-    background-color: transparent;
+    padding: 8px 0;
+    font-size: 17px;
+    letter-spacing: 0.5px;
 }
+
 .ai{
     width: 100%;
     text-align: left;
-    padding: 10px 0;
-    font-size: 18px;
-    letter-spacing: 1px;
-    background-color: transparent;
+    padding: 8px 0;
+    font-size: 17px;
+    letter-spacing: 0.5px;
+}
+
+@media (max-width: 768px){
+    .talk-box{
+        width: 100%;
+        height: 95vh;
+        padding: 15px;
+    }
+
+    .header-box h1{
+        font-size: 20px;
+    }
+
+    .header-box button{
+        width: 90px;
+        font-size: 14px;
+    }
+
+    .user,
+    .ai{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px){
+    .talk-box{
+        height: 95vh;
+        padding: 12px;
+        border-radius: 18px;
+    }
+
+    .header-box{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .header-box h1{
+        font-size: 18px;
+    }
+
+    .header-box button{
+        width: 100%;
+    }
+
+    .user,
+    .ai{
+        font-size: 15px;
+    }
 }

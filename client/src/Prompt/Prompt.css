@@ -1,85 +1,85 @@
 .container-box{
     height: 100vh;
     width: 100%;
-    display : flex;
-    justify-content: space-around;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
     flex-direction: column;
     background: #213547;
+    padding: 10px;
 }
+
 .container-box .header{
     width: 90%;
-    display : flex;
+    display: flex;
     justify-content: space-between;
     align-items: center;
-    /* background-color: aquamarine; */
 }
+
 .header h1{
     color: rgba(255, 255, 255, 0.7);
-    background-color: transparent;
+    font-size: 24px;
 }
+
 .header button{
     width: 100px;
     padding: 10px;
-    border: 1px solid black;
+    border: none;
     border-radius: 10px;
-    font-size: 16px;
-    background-color: rgba(255, 255, 255, 0.8);
+    font-size: 15px;
+    background-color: rgba(255, 255, 255, 0.85);
 }
+
 .header button:hover{
-    background-color: rgba(255, 255, 255);
+    background-color: #fff;
+    cursor: pointer;
 }
+
 .inputBox{
     height: 88vh;
     width: 90%;
-    /* background-color: aqua; */
-    display : flex;
-    justify-content: start;
+    display: flex;
     gap: 1.5rem;
-    align-items: center;
     flex-direction: column;
+    align-items: center;
 }
+
 .inputBox .communication{
-    height: 80%;
+    flex: 1;
     width: 95%;
     padding: 15px;
-    text-align: left;
-    /* background-color: purple; */
     overflow-y: auto;
 }
+
 .communication p{
     width: 100%;
     margin: 10px 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    /* background-color: pink; */
     padding-bottom: 5px;
+    text-align: center;
     color: rgba(255, 255, 255, 0.7);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.433);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.35);
 }
+
 .user, .user b{
     width: 100%;
     text-align: right;
-    padding: 10px 0;
-    font-size: 18px;
-    letter-spacing: 1px;
-    background-color: transparent;
+    padding: 8px 0;
+    font-size: 17px;
+    letter-spacing: 0.5px;
 }
+
 .ai, .ai b{
     width: 100%;
     text-align: left;
-    padding: 10px 0;
-    font-size: 18px;
-    letter-spacing: 1px;
-    background-color: transparent;
+    padding: 8px 0;
+    font-size: 17px;
+    letter-spacing: 0.5px;
 }
 
 .inputBox form{
-    height: 10%;
+    height: 55px;
     width: 95%;
-    padding: 0px 15px;
+    padding: 0 15px;
     border: 1px solid white;
     border-radius: 25px;
     display: flex;
@@ -87,28 +87,74 @@
     align-items: center;
     background-color: rgba(2, 2, 2, 0.2);
 }
+
 .inputBox form input[type="text"]{
-    width: 80%;
-    padding: 0 10px;
+    width: 85%;
     background-color: transparent;
     border: none;
     outline: none;
-    color: rgba(255, 255, 255, 0.68);
-    font-size: 18px;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 16px;
 }
+
 .inputBox form input[type="submit"]{
-    height: 50px;
-    width: 50px;
-    padding: 0px;
-    border: 1px solid black;
+    height: 45px;
+    width: 45px;
+    border: none;
     border-radius: 50%;
-    font-size: 24px;
-    background-color: rgba(255, 255, 255, 0.1);
-    transition: .3s;
+    font-size: 22px;
+    background-color: rgba(255, 255, 255, 0.15);
+    transition: 0.3s;
 }
+
 .inputBox form input[type="submit"]:hover{
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.35);
+    cursor: pointer;
 }
+
 .inputBox form input[type="submit"]:active{
-    transform: scale(0.8);
+    transform: scale(0.85);
+}
+
+@media (max-width: 768px){
+    .header h1{
+        font-size: 20px;
+    }
+
+    .header button{
+        width: 90px;
+        font-size: 14px;
+    }
+
+    .user, .ai{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px){
+    .container-box{
+        padding: 8px;
+    }
+
+    .container-box .header{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .header h1{
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .header button{
+        width: 100%;
+    }
+
+    .inputBox{
+        width: 100%;
+    }
+
+    .inputBox form input[type="text"]{
+        font-size: 15px;
+    }
 }
