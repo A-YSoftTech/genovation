@@ -5,7 +5,7 @@
     justify-content: center;
     align-items: center;
     background: #213547;
-    padding: 15px;
+
 }
 
 .container form{
@@ -24,7 +24,7 @@
 
 .container form input{
     padding: 14px;
-    width: 100%;
+    width: 90%;
     background-color: white;
     border: none;
     border-radius: 5px;
@@ -42,7 +42,7 @@
 
 .container form input[type="submit"]{
     padding: 14px;
-    width: 100%;
+    width: 90%;
     background-color: rgb(0, 136, 255);
     border: none;
     font-size: 16px;
@@ -56,13 +56,14 @@
 
 @media (max-width: 768px){
     .container form{
-        width: 100%;
+        width: 70%;
     }
 }
 
 @media (max-width: 480px){
     .container form{
-        padding: 25px 15px;
+        width: 80%;
+        /* padding: 25px 15px; */
     }
 
     .container form h1{

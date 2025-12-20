@@ -1,85 +1,82 @@
 .container-box{
     height: 100vh;
     width: 100%;
-    display: flex;
-    justify-content: space-between;
+    display : flex;
+    justify-content: space-around;
     align-items: center;
     flex-direction: column;
     background: #213547;
-    padding: 10px;
 }
-
 .container-box .header{
     width: 90%;
-    display: flex;
+    display : flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 1rem;
 }
-
 .header h1{
     color: rgba(255, 255, 255, 0.7);
-    font-size: 24px;
+    background-color: transparent;
 }
-
 .header button{
     width: 100px;
     padding: 10px;
-    border: none;
+    border: 1px solid black;
     border-radius: 10px;
-    font-size: 15px;
-    background-color: rgba(255, 255, 255, 0.85);
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 0.8);
 }
-
 .header button:hover{
-    background-color: #fff;
-    cursor: pointer;
+    background-color: rgba(255, 255, 255);
 }
-
 .inputBox{
     height: 88vh;
     width: 90%;
-    display: flex;
+    display : flex;
+    justify-content: start;
     gap: 1.5rem;
-    flex-direction: column;
     align-items: center;
+    flex-direction: column;
 }
-
 .inputBox .communication{
-    flex: 1;
+    height: 80%;
     width: 95%;
     padding: 15px;
+    text-align: left;
     overflow-y: auto;
 }
-
 .communication p{
     width: 100%;
     margin: 10px 0;
-    padding-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
+    padding-bottom: 5px;
     color: rgba(255, 255, 255, 0.7);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.35);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.433);
 }
-
 .user, .user b{
     width: 100%;
     text-align: right;
-    padding: 8px 0;
-    font-size: 17px;
-    letter-spacing: 0.5px;
+    padding: 10px 0;
+    font-size: 18px;
+    letter-spacing: 1px;
+    background-color: transparent;
 }
-
 .ai, .ai b{
     width: 100%;
     text-align: left;
-    padding: 8px 0;
-    font-size: 17px;
-    letter-spacing: 0.5px;
+    padding: 10px 0;
+    font-size: 18px;
+    letter-spacing: 1px;
+    background-color: transparent;
 }
 
 .inputBox form{
-    height: 55px;
+    height: 10%;
     width: 95%;
-    padding: 0 15px;
+    padding: 0px 15px;
     border: 1px solid white;
     border-radius: 25px;
     display: flex;
@@ -87,33 +84,30 @@
     align-items: center;
     background-color: rgba(2, 2, 2, 0.2);
 }
-
 .inputBox form input[type="text"]{
-    width: 85%;
+    width: 80%;
+    padding: 0 10px;
     background-color: transparent;
     border: none;
     outline: none;
-    color: rgba(255, 255, 255, 0.7);
-    font-size: 16px;
+    color: rgba(255, 255, 255, 0.68);
+    font-size: 18px;
 }
-
 .inputBox form input[type="submit"]{
-    height: 45px;
-    width: 45px;
-    border: none;
+    height: 50px;
+    width: 50px;
+    padding: 0px;
+    border: 1px solid black;
     border-radius: 50%;
-    font-size: 22px;
-    background-color: rgba(255, 255, 255, 0.15);
-    transition: 0.3s;
+    font-size: 24px;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: .3s;
 }
-
 .inputBox form input[type="submit"]:hover{
-    background-color: rgba(255, 255, 255, 0.35);
-    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.3);
 }
-
 .inputBox form input[type="submit"]:active{
-    transform: scale(0.85);
+    transform: scale(0.8);
 }
 
 @media (max-width: 768px){
@@ -151,7 +145,7 @@
     }
 
     .inputBox{
-        width: 100%;
+        width: 95%;
     }
 
     .inputBox form input[type="text"]{

@@ -1,84 +1,82 @@
 .container_box{
     height: 100vh;
     width: 100%;
-    display: flex;
+    display : flex;
     justify-content: center;
     align-items: center;
     background: #213547;
-    padding: 10px;
 }
-
 .talk-box{
     height: 90vh;
     width: 90%;
-    max-width: 1100px;
     padding: 20px;
-    display: flex;
+    display : flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 2rem;
     border: 1px solid rgba(255, 255, 255, 0.5);
     border-radius: 25px;
     background-color: rgba(0, 0, 0, 0.3);
-    overflow: hidden;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
-
 .header-box{
     width: 100%;
-    display: flex;
+    display : flex;
     justify-content: space-between;
     align-items: center;
+    background-color: transparent;
 }
-
 .header-box h1{
-    font-size: 24px;
     color: rgba(255, 255, 255, 0.7);
+    background-color: transparent;
 }
-
 .header-box button{
     width: 100px;
     padding: 10px;
-    border: none;
+    border: 1px solid black;
     border-radius: 10px;
-    font-size: 15px;
-    background-color: rgba(255, 255, 255, 0.85);
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 0.8);
 }
-
 .header-box button:hover{
-    background-color: #fff;
-    cursor: pointer;
+    background-color: rgba(255, 255, 255);
 }
-
 .communication-box{
-    flex: 1;
-    width: 100%;
+    height: 80%;
+    width: 95%;
     padding: 15px;
+    text-align: left;
     background-color: transparent;
     overflow-y: auto;
 }
-
 .communication-box p{
     width: 100%;
     margin: 10px 0;
-    padding-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
+    padding-bottom: 5px;
     color: rgba(255, 255, 255, 0.7);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.433);
 }
-
 .user{
     width: 100%;
     text-align: right;
-    padding: 8px 0;
-    font-size: 17px;
-    letter-spacing: 0.5px;
+    padding: 10px 0;
+    font-size: 18px;
+    letter-spacing: 1px;
+    background-color: transparent;
 }
-
 .ai{
     width: 100%;
     text-align: left;
-    padding: 8px 0;
-    font-size: 17px;
-    letter-spacing: 0.5px;
+    padding: 10px 0;
+    font-size: 18px;
+    letter-spacing: 1px;
+    background-color: transparent;
 }
 
 @media (max-width: 768px){
@@ -108,6 +106,7 @@
         height: 95vh;
         padding: 12px;
         border-radius: 18px;
+        width: 90%;
     }
 
     .header-box{
